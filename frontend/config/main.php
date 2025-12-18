@@ -51,7 +51,7 @@ return [
 
     'modules' => [
         'frontApi' => [
-            'class' => 'api\modules\frontApi',
+            'class' => 'api\modules\frontApi\frontApi',
         ],
     ],
     'params' => $params,
