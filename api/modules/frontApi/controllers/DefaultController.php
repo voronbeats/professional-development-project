@@ -1,8 +1,8 @@
 <?php
 
-namespace api\modules\controllers;
+namespace api\modules\frontApi\controllers;
 
-use yii2mod\rbac\filters\AccessControl;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 
 /**
