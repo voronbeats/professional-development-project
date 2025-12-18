@@ -22,7 +22,7 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::class,
-                'except' => ['login', 'error', 'logout'],
+                'except' => ['error', 'login'],
                 'rules' => [
                     [
                         'allow' => true,
