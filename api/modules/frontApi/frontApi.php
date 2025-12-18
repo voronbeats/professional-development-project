@@ -1,6 +1,6 @@
 <?php
 
-namespace api\modules;
+namespace api\modules\frontApi;
 
 /**
  * frontApi module definition class
@@ -10,7 +10,7 @@ class frontApi extends \yii\base\Module
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'api\modules\controllers';
+    public $controllerNamespace = 'api\modules\frontApi\controllers';
 
     /**
      * {@inheritdoc}
@@ -19,6 +19,7 @@ class frontApi extends \yii\base\Module
     {
         parent::init();
 
+        \Yii::configure($this, require '/app/api'. '/config/main.php');
         // custom initialization code goes here
     }
 }
